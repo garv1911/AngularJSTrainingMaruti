@@ -102,11 +102,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="angular.js" />
-    <Content Include="Author.js" />
-    <Content Include="AuthorPage.html" />
-    <Content Include="secondhtml.html" />
-    <Content Include="startpage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

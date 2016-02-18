@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html ng-app="AuthorApp"> <!-- Implicit Scope Declaration---+> Setting ng-app directive to Angular Module Name -->
+<head>
+    <title>Angular Demo</title>
+	<meta charset="utf-8" />
+    <script src="angular.js"></script>
+    <script src="Author.js"></script>
+</head>
+<body ng-controller="AuthorController">  <!-- Scope Inheritance--+>Scope of body is set to controller that we created in Author.js -->
+    <ul>
+        <li ng-repeat="author in authors">
+            {{author.name}}   <!--Model View Data Binding--+> Binding any element inside body to array of controller-->     
+        </li>
+    </ul>
+</body>
+</html>

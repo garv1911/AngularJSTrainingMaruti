@@ -7,9 +7,18 @@
     <script src="Author.js"></script>
 </head>
 <body ng-controller="AuthorController">  <!-- Scope Inheritance--+>Scope of body is set to controller that we created in Author.js -->
+    Search:<input ng-model="searchtext" /> 
+    
+    Sort:
+    <select ng-model="sortorder">
+        <option value="name">Name</option>
+        <option value="age">Age</option>
+    </select>
+    <!--Data Binding is the core feature of Angular JS.It binds the name of input box to variable in data model ,known as Two Way Binding.It keeps the box and data model in sync-->
     <ul>
-        <li ng-repeat="author in authors">
+        <li ng-repeat="author in authors|filter:searchtext |orderBy:sortorder">
             {{author.name}}   <!--Model View Data Binding--+> Binding any element inside body to array of controller-->     
+            is {{author.age}} years old
         </li>
     </ul>
 </body>

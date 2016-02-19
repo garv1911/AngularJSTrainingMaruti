@@ -3,9 +3,10 @@
 AuthorApp.controller('AuthorController', function ($scope) {  //Creating Controller and Controller is a function that takes $scope as parameter
     $scope.authors =
         [
-            { 'name': 'Gaurav Goyal' },
-            { 'name': 'Tejas Garg' },
-            { 'name': 'Prashant Agarwal' },
-            { 'name': 'Tony' }
+            { 'name': 'Anoop Garg', 'age': '32' },
+            { 'name': 'Tejas Garg', 'age': '3' },
+            { 'name': 'Prashant Agarwal', 'age': '45' },
+            { 'name': 'Tony', 'age': '35' },
+
         ];
 });

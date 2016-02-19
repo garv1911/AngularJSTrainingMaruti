@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="AuthorApp">
+<!-- Implicit Scope Declaration---+> Setting ng-app directive to Angular Module Name -->
+<head>
+    <title>Angular Demo</title>
+    <meta charset="utf-8" />
+    <script src="angular.js"></script>
+    <script src="Author.js"></script>
+    <script>
+        var app = angular.module('AuthorApp', []);
+        app.controller('authorController', function ($scope) {
+            $scope.author = {
+                name: "Gaurav Goyal",
+                age: 23
+            };
+        });
+        app.controller('authorChildController', function ($scope) {
+            $scope.hello = function(){
+                alert($scope.author.name);
+            }
+        })
+       
+    </script>
+</head>
+<body>
+    <div  ng-controller="authorController">
+        <div ng-controller="authorChildController">
+            I am in child div<br/>
+            {{author.name}}   <!--Model View Data Binding--+> Binding any element inside body to array of controller-->
+            is {{author.age}} years old
+            <button ng-click="hello()" class="button">Say Hello</button>
+        </div>
+    </div>
+
+</body>
+</html>

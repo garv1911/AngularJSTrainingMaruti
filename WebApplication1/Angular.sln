@@ -25,6 +25,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularDemo", "..\AngularDe
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularDirective", "..\AngularDirective\", "{CCBC46D4-320A-4A6C-965B-CADCC863049C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62186"
+		Debug.AspNetCompiler.PhysicalPath = "..\AngularDirective\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62186\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62186"
+		Release.AspNetCompiler.PhysicalPath = "..\AngularDirective\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62186\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62186"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +56,10 @@ Global
 		{420676F6-80FA-4979-809F-00709C5038E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{420676F6-80FA-4979-809F-00709C5038E3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{420676F6-80FA-4979-809F-00709C5038E3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CCBC46D4-320A-4A6C-965B-CADCC863049C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBC46D4-320A-4A6C-965B-CADCC863049C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBC46D4-320A-4A6C-965B-CADCC863049C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBC46D4-320A-4A6C-965B-CADCC863049C}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

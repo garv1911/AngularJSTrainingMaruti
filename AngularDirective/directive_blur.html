@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="angular16.js"></script>
+</head>
+<body>
+    <div>
+        <h2>You clicked the button {{click}} times</h2>
+        <button ng-click="click=click+1" ng-init="click=0">Increment</button>
+    </div>
+    <br/>
+    <div style="border:1px dotted">
+        <input ng-blur="leave=leave+1" ng-init="leave=0"/>
+        <input id="text2"/>
+
+
+    </div>
+</body>
+</html>
